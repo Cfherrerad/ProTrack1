@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Texto normal -->
+    <color name="textColor">#333333</color> <!-- gris oscuro para buena legibilidad -->
+    <!-- Texto seleccionado -->
+    <color name="selectedTextColor">#FFFFFF</color> <!-- blanco sobre fondo oscuro -->
+    <!-- Fondo de botón seleccionado -->
+    <color name="selectedBackground">#2C3E50</color> <!-- azul grisáceo oscuro -->
+    <!-- Fondo de botón no seleccionado -->
+    <color name="unselectedBackground">#FFFFFF</color>
+    <!-- Color de íconos -->
+    <color name="iconColor">#555555</color> <!-- gris medio -->
+    <!-- Color de borde o separador (opcional) -->
+    <color name="dividerColor">#E6E6E6</color>
+
+    <color name="iconColorDark">#444444</color>
+    <!-- texto normal seleccionado-->
+    <color name="textColorDarkSelected">#030213</color>
+
+
+
+        <color name="blue_selected">#FF2196F3</color>
+        <color name="blue_pressed">#FF1976D2</color>
+        <color name="text_color_normal">#FF000000</color>
+        <color name="icon_color_normal">#FF757575</color>
+
+
+</resources>

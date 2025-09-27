@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Contenedor para el contenido principal -->
+    <FrameLayout
+        android:id="@+id/contenedorPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- Overlay para oscurecer -->
+    <View
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:alpha="0"
+        android:clickable="true"
+        android:visibility="gone"
+        android:elevation="15dp"/>
+
+    <!-- Contenedor para el menú lateral -->
+    <FrameLayout
+        android:id="@+id/contenedorMenuLateral"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:translationX="-250dp"
+        android:elevation="16dp"
+        android:background="@android:color/darker_gray"/>
+
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Estado seleccionado - Icono blanco -->
+    <item android:state_selected="true" android:color="@color/white" />
+
+    <!-- Estado normal - Icono gris -->
+    <item android:color="@color/icon_color_normal" />
+</selector>

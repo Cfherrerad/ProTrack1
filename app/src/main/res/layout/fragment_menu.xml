@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+        <!-- Botón Perfil -->
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_button_background"
+            android:textColor="@drawable/text_color_selector"
+            android:textStyle="bold"
+            android:padding="14dp"
+            android:gravity="center_vertical"
+            android:id="@+id/btnPerfil"
+            android:text="Perfil"
+            app:icon="@drawable/ic_perfil"
+            app:iconTint="@drawable/icon_tint_selector"
+            app:iconGravity="start"
+            app:iconPadding="8dp"/>
+
+        <!-- Botón Fotos -->
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_button_background"
+            android:textColor="@drawable/text_color_selector"
+            android:textStyle="bold"
+            android:padding="14dp"
+            android:gravity="center_vertical"
+            android:id="@+id/btnFotos"
+            android:text="Fotos"
+            app:icon="@drawable/ic_fotos"
+            app:iconTint="@drawable/icon_tint_selector"
+            app:iconGravity="start"
+            app:iconPadding="8dp"/>
+
+        <!-- Botón Video -->
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_button_background"
+            android:textColor="@drawable/text_color_selector"
+            android:textStyle="bold"
+            android:padding="14dp"
+            android:gravity="center_vertical"
+            android:id="@+id/btnVideo"
+            android:text="Video"
+            app:icon="@drawable/ic_play"
+            app:iconTint="@drawable/icon_tint_selector"
+            app:iconGravity="start"
+            app:iconPadding="8dp"/>
+
+        <!-- Botón Web -->
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_button_background"
+            android:textColor="@drawable/text_color_selector"
+            android:textStyle="bold"
+            android:padding="14dp"
+            android:gravity="center_vertical"
+            android:id="@+id/btnWeb"
+            android:text="Web"
+            app:icon="@drawable/ic_web"
+            app:iconTint="@drawable/icon_tint_selector"
+            app:iconGravity="start"
+            app:iconPadding="8dp"/>
+
+    <!-- Divisor-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dividerColor"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <!-- Botón Descargar CV -->
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu_button_background"
+            android:textColor="@drawable/text_color_selector"
+            android:textStyle="bold"
+            android:padding="14dp"
+            android:gravity="center_vertical"
+            android:id="@+id/btnDescargar"
+            android:text="Descargar CV"
+            app:icon="@drawable/ic_descargar"
+            app:iconTint="@drawable/icon_tint_selector"
+            app:iconGravity="start"
+            app:iconPadding="8dp"/>
+
+    <Button
+        android:id="@+id/btnCerrarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Menú"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

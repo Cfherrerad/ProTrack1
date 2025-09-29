@@ -2,4 +2,20 @@
     <string name="app_name">ProTrack1</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="descripcion_boton_menu">Abrir menú lateral</string>
+    <string name="descripcion_imagen_perfil">Imagen de perfil</string>
+    <string name="nombre_usuario">María García</string>
+    <string name="profesion_usuario">Desarrolladora Full Stack</string>
+    <string name="ubicacion_usuario">Bogotá, Colombia</string>
+    <string name="correo_usuario">maria.garcia@example.com</string>
+    <string name="telefono_usuario">+57 300 123 4567</string>
+    <string name="experiencia_usuario">5 años de experiencia</string>
+    <string name="titulo_acerca_de_mi">Acerca de mí</string>
+    <string name="acerca_de_mi">
+    Desarrolladora apasionada por crear experiencias digitales excepcionales.
+    Especializada en React, Node.js y diseño centrado en el usuario.
+    Con experiencia liderando equipos y desarrollando aplicaciones web escalables
+    para empresas de diferentes sectores.
+    </string>
 </resources>

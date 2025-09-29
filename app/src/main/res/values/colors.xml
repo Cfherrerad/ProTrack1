@@ -14,6 +14,7 @@
     <color name="iconColor">#555555</color> <!-- gris medio -->
     <!-- Color de borde o separador (opcional) -->
     <color name="dividerColor">#E6E6E6</color>
+    <color name="gray">#808080</color>
 
     <color name="iconColorDark">#444444</color>
     <!-- texto normal seleccionado-->

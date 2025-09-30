@@ -1,36 +1,53 @@
 package com.example.protrack1
 
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
+import android.widget.MediaController
+import android.widget.VideoView
 import androidx.fragment.app.Fragment
-import com.example.protrack1.databinding.FragmentPrincipalBinding
-import com.example.protrack1.databinding.FragmentVideoBinding
 
 class VideoFragment : Fragment() {
-    private var _binding: FragmentVideoBinding? = null
-    private val binding get() = _binding!!
-
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        _binding = FragmentVideoBinding.inflate(inflater, container, false)
-        return binding.root
-    }
+    ): View? {
+        val view = inflater.inflate(R.layout.fragment_video, container, false)
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
+        // 🎬 Configuración del VideoView
+        val videoView = view.findViewById<VideoView>(R.id.videoViewCV)
 
-        binding.btnMenu.setOnClickListener {
-            (activity as? MainActivity)?.toggleMenu()
+        val videoUri = Uri.parse("android.resource://${requireContext().packageName}/${R.raw.presentacion}")
+        videoView.setVideoURI(videoUri)
+
+        val mediaController = MediaController(requireContext())
+        mediaController.setAnchorView(videoView)
+        videoView.setMediaController(mediaController)
+
+        videoView.start()
+
+        // 🍔 Botón menú hamburguesa (misma lógica que en otros fragments)
+        val btnMenu = view.findViewById<ImageButton>(R.id.btnMenu)
+        btnMenu?.setOnClickListener {
+            val menu = requireActivity().findViewById<View>(R.id.contenedorMenuLateral)
+            val overlay = requireActivity().findViewById<View>(R.id.overlay)
+
+            if (menu.translationX == 0f) {
+                // Ocultar menú
+                menu.animate().translationX(-menu.width.toFloat()).setDuration(300).start()
+                overlay.visibility = View.GONE
+                overlay.animate().alpha(0f).setDuration(300).start()
+            } else {
+                // Mostrar menú
+                menu.animate().translationX(0f).setDuration(300).start()
+                overlay.visibility = View.VISIBLE
+                overlay.animate().alpha(1f).setDuration(300).start()
+            }
         }
-    }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+        return view
     }
 }

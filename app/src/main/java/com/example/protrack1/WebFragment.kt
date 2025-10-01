@@ -28,6 +28,11 @@ class WebFragment : Fragment() {
             (activity as? MainActivity)?.toggleMenu()
         }
     }
+    private fun setupWebView() {}
+
+    private fun loadWebPage() {}
+
+    private fun loadUrl(url: String) {}
 
     override fun onDestroyView() {
         super.onDestroyView()

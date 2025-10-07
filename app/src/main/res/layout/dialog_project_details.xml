@@ -35,6 +35,7 @@
                 android:layout_height="160dp"
                 android:scaleType="centerCrop"
                 android:background="#F0F0F0"
+                android:src="@drawable/ecommerce_plaftorm"
                 android:contentDescription="E-commerce Platform"/>
 
             <!-- Descripción del proyecto -->
